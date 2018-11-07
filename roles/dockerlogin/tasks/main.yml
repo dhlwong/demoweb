@@ -1,4 +1,6 @@
 ---
+- name: start docker service
+  service: name=docker enabled=yes state=started
 - name: Log into DockerHub using a custom config file
   docker_login:
     username: rhlw

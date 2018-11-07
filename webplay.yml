@@ -1,5 +1,6 @@
 ---
 - hosts: all
   roles:
+    - { role: sysupdate, become: yes }
     - { role: dockerlogin, become: yes }
     - { role: installhttpd, become: yes }
